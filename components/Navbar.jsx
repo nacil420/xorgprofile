@@ -5,6 +5,7 @@ import React, {useState, useEffect} from 'react'
 import {AiOutlineClose,AiOutlineMail,AiOutlineMenu} from 'react-icons/ai'
 import {FaGithub, FaInstagramSquare} from 'react-icons/fa'
 import {BsWhatsapp} from 'react-icons/bs'
+import logoImg from '../public/assets/navLogo.png'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -29,7 +30,7 @@ const Navbar = () => {
     return(
         <div className={shadow ? "fixed w-full h-20 z-[100]" : "fixed w-full h-20 shadow-xl z-[100]"}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-orange '>
-                <Image src="/../public/assets/navLogo.png" alt="/" width='50' height='50' />
+                <Image src={logoImg} alt="/" width='50' height='50' />
             <div>
                 <ul className='hidden md:flex'>
                     <Link href='/'>
